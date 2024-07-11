@@ -1,0 +1,230 @@
+/* Estilos generales */
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #ffffff;
+    color: #333;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background-color: #333;
+    color: #fff;
+    padding: 40px 0;
+    text-align: center;
+}
+
+header h1 {
+    margin: 0;
+    font-size: 2.5rem;
+    animation: fadeInDown 1s ease-in-out;
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 40px;
+}
+
+section {
+    width: 80%;
+    margin: 40px 0;
+    padding: 40px;
+    background-color: #fff;
+    border-radius: 15px;
+    box-shadow: 0 8px 16px #0000004f;
+    animation: fadeInUp 1s ease-in-out;
+}
+
+#pricing-options {
+    display: flex;
+    justify-content: space-around;
+    max-width: 850px; /* Ajustado a max-width para mejor responsividad */
+    margin: 0 auto; /* Centrar opciones de precio */
+}
+
+/* Estilos base para los botones */
+
+
+@media (max-width: 480px) {
+    .option {
+        padding: 10px; /* Reducir aún más el padding para pantallas muy pequeñas */
+    }
+}
+
+
+.option:hover {
+    transform: scale(1.05);
+}
+
+.option h3 {
+    margin-top: 0;
+}
+
+button {
+    background-color: #333;
+    color: #fff;
+    border: none;
+    padding: 15px 40px; /* Ajustado el padding para botones */
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+button:hover {
+    background-color: #555;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+form label {
+    margin-top: 30px;
+    font-weight: bold;
+    color: #333;
+}
+
+form input, form select, form textarea {
+    margin-top: 5px;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    width: 100%;
+    box-shadow: inset 0 1px 3px rgba(0, 0, 0, 0.1);
+    transition: border-color 0.3s, box-shadow 0.3s;
+}
+
+form input:focus, form select:focus, form textarea:focus {
+    border-color: #666;
+    box-shadow: 0 0 8px rgba(102, 102, 102, 0.3);
+    outline: none;
+}
+
+textarea {
+    resize: vertical;
+}
+
+#form-result p {
+    background-color: #dff0d8;
+    color: #3c763d;
+    padding: 15px;
+    border-radius: 4px;
+    margin-top: 20px;
+}
+
+/* Animations */
+@keyframes fadeInDown {
+    from {
+        opacity: 0;
+        transform: translateY(-20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@media (max-width: 768px) {
+    /* Estilos específicos para pantallas pequeñas */
+    body {
+        font-size: 14px;
+    }
+    header {
+        padding: 20px 0;
+    }
+    /* Ajusta otros estilos según sea necesario */
+}
+
+/* Estilos base para los botones */
+
+@media (max-width: 1024px) {
+    .option {
+        width: 150px; /* Ancho más estrecho para pantallas medianas */
+        padding: 15px; /* Reducir el padding */
+    }
+}
+
+/* Estilos base para los botones */
+.option {
+    text-align: center;
+    padding: 20px;
+    background-color: #fafafa;
+    border-radius: 8px;
+    box-shadow: 0 10px 16px #ff8400c2;
+    transition: transform 0.3s;
+    cursor: pointer;
+    width: 200px; /* Ancho fijo inicial */
+    margin: 10px; /* Margen entre los botones */
+}
+
+/* Media queries para ajustar los estilos según el tamaño de la pantalla */
+@media (max-width: 1024px) {
+    .option {
+        width: 150px; /* Ancho más estrecho para pantallas medianas */
+        padding: 15px; /* Reducir el padding */
+    }
+}
+
+@media (max-width: 768px) {
+    .option {
+        width: 100%; /* Ancho completo para pantallas pequeñas */
+        max-width: 300px; /* Ancho máximo para evitar que se extienda demasiado */
+    }
+}
+
+@media (max-width: 480px) {
+    .option {
+        padding: 10px; /* Reducir aún más el padding para pantallas muy pequeñas */
+    }
+}
+
+
+
+
+.PaypalButton {
+    margin: 30px auto;
+    display: flex;
+    justify-content: center;
+}
+
+footer {
+    margin: 40px auto;
+    display: flex;
+    justify-content: center;
+}
+
+/* Estilos específicos para la página de Información (info.html) */
+.info-content {
+    line-height: 1.6;
+    max-width: 800px; /* Ajustado el ancho máximo para mejor legibilidad */
+    margin: 0 auto; /* Centrar el contenido */
+}
+
+.btn {
+    display: inline-block;
+    margin: 10px;
+    padding: 15px 40px;
+    background-color: #555;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 4px;
+    transition: background-color 0.3s;
+}
+
+.btn:hover {
+    background-color: #333;
+}
