@@ -89,7 +89,7 @@ document.addEventListener('DOMContentLoaded', () => {
     }
 
     function sendEmail(formData) {
-        emailjs.send('service_aj2d2l3', 'template_id', {
+        emailjs.send('service_aj2d2l3', 'template_u81icmi', {
             fullName: formData.get('full-name'),
             email: formData.get('email'),
             phone: formData.get('phone'),
