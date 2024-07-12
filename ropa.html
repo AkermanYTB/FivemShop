@@ -3,11 +3,10 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Tienda de Skins Personalizadas para Armas - FiveM</title>
+    <title>Tienda de Ropa Personalizada - FiveM</title>
     <link rel="stylesheet" href="styles.css">
     <script src="https://www.paypal.com/sdk/js?client-id=AUD-rcq7CfoNnLbzvhHndQnb75S4v68084W1fdAMvJgIY_Wjuj17tiUOdlFdv6DCPr5sIdGc_l0eS1cj&currency=EUR"></script>
     <script src="https://cdn.emailjs.com/dist/email.min.js"></script>
-    
     <script>
         (function(){
             emailjs.init('EEwWK5S0Ttv2UWpMFUz3Q5cILpVuEnGsAp6Jlj80yzdU9xbKnedOl9QGPUVUjxb4DgkbNImWUYP0bkKD'); // Reemplaza con tu user_id
@@ -16,20 +15,18 @@
 </head>
 <body>
     <header>
-        <h1>Tienda de Skins Personalizadas para Armas - FiveM</h1>
+        <h1>Tienda de Ropa Personalizada - FiveM</h1>
         <nav>
-            <ul>
-                <a href="index.html" class="btn">Tienda</a>
-                <a href="ropa.html" class="btn">Ropa</a>
-                <a href="info.html" class="btn">Info</a>
-                <a href="fotos.html" class="btn">Fotos</a>
-                
-            </ul>
+            <a href="index.html" class="btn">Tienda</a>
+            <a href="ropa.html" class="btn">Ropa</a>
+            <a href="info.html" class="btn">Info</a>
+            <a href="fotos.html" class="btn">Fotos</a>
         </nav>
+        
     </header>
     <main>
         <section id="pricing-options">
-            <h2>Elige tu opción de skin personalizada</h2>
+            <h2>Elige tu opción de ropa personalizada</h2>
             <div class="option" data-price="2">
                 <h3>Básica</h3>
                 <p>2€</p>
@@ -47,8 +44,8 @@
             </div>
         </section>
         <section id="form-section" style="display: none;">
-            <h2>Solicita tu Skin Personalizada</h2>
-            <form id="custom-skin-form">
+            <h2>Solicita tu Ropa Personalizada</h2>
+            <form id="custom-clothing-form">
                 <label for="full-name">Nombre Completo:</label>
                 <input type="text" id="full-name" name="full-name" required>
                 
@@ -65,12 +62,13 @@
                     <option value="mx">México</option>
                     <option value="ar">Argentina</option>
                     <option value="cl">Chile</option>
+                    <!-- Agrega más opciones de países según sea necesario -->
                 </select>
                 
-                <label for="weapon">Tipo de Arma:</label>
-                <input type="text" id="weapon" name="weapon" required>
+                <label for="clothing-type">Parte del cuerpo:</label>
+                <input type="text" id="clothing-type" name="clothing-type" required>
                 
-                <label for="description">Descripción Detallada de la Skin:</label>
+                <label for="description">Descripción Detallada de la Ropa:</label>
                 <textarea id="description" name="description" rows="4" required></textarea>
                 
                 <input type="hidden" id="price" name="price">
@@ -79,13 +77,9 @@
             </form>
             <div id="form-result"></div>
         </section>
-        
-        <section id="shop">
-            <h2>Tienda</h2>
-            <p>Explora nuestras opciones de skins personalizadas para armas en FiveM y elige la que mejor se adapte a tus necesidades.</p>
-        </section>
     </main>
     <script src="scripts.js"></script>
     <footer class="footer">Developed by <strong>&nbsp;AkerMan</strong></footer>
+
 </body>
 </html>

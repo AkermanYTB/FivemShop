@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Galería de Skins Personalizadas - FiveM</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <header>
+        <h1>Galería de Skins Personalizadas</h1>
+        <nav>
+            <ul>
+                <a href="index.html" class="btn">Tienda</a>
+                <a href="ropa.html" class="btn">Ropa</a>
+                <a href="info.html" class="btn">Info</a>
+                <a href="fotos.html" class="btn">Fotos</a>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section id="gallery">
+            <h2>Explora Nuestras Skins Personalizadas</h2>
+            <div class="photo">
+                <img src="img/foto1.png" alt="Foto 1" onclick="openModal('img/foto1.png')">
+            </div>
+            <div class="photo">
+                <img src="img/foto2.png" alt="Foto 2" onclick="openModal('img/foto2.png')">
+            </div>
+            <div class="photo">
+                <img src="img/foto3.png" alt="Foto 3" onclick="openModal('img/foto3.png')">
+            </div>
+            <div class="photo">
+                <img src="img/foto4.png" alt="Foto 4" onclick="openModal('img/foto4.png')">
+            </div>
+            <div class="photo">
+                <img src="img/foto5.png" alt="Foto 5" onclick="openModal('img/foto5.png')">
+            </div>
+            <div class="photo">
+                <img src="img/foto6.png" alt="Foto 6" onclick="openModal('img/foto6.png')">
+            </div>
+            <div class="photo">
+                <img src="img/foto7.png" alt="Foto 7" onclick="openModal('img/foto7.png')">
+            </div>
+            <div class="photo">
+                <img src="img/foto8.png" alt="Foto 8" onclick="openModal('img/foto8.png')">
+            </div>
+            <div class="photo">
+                <img src="img/foto9.png" alt="Foto 9" onclick="openModal('img/foto9.png')">
+            </div>
+            <div class="photo">
+                <img src="img/foto10.png" alt="Foto 10" onclick="openModal('img/foto10.png')">
+            </div>
+        </section>
+        
+    </main>
+
+    <div id="myModal" class="modal" onclick="closeModal()">
+        <span class="close">&times;</span>
+        <img class="modal-content" id="modalImg">
+    </div>
+
+    <script src="scripts.js"></script>
+
+    <footer>
+        <p>Developed by AkerMan</p>
+    </footer>
+
+</body>
+</html>
